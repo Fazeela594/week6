@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Orders & Projects – Hunar</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@600;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap top-in">
+    <a href="#/orders" class="brand"><span class="mark">H</span>Hunar</a>
+    <nav class="links" aria-label="Main">
+      <a href="#/orders" data-p="orders">My Orders <small id="nOrd"></small></a>
+      <a href="#/proposals" data-p="proposals">Proposals <small id="nProp"></small></a>
+    </nav>
+    <div class="role" role="group" aria-label="View as">
+      <button data-role="client">Client view</button>
+      <button data-role="freelancer">Freelancer view</button>
+    </div>
+  </div>
+</header>
+<main class="wrap" id="app"></main>
+<footer class="foot"><div class="wrap"><span>© 2026 Hunar. Student project.</span><button class="link" data-a="reset">Reset demo data</button></div></footer>
+
+<div class="modal" id="cm" hidden>
+  <div class="box" role="dialog" aria-modal="true" aria-labelledby="cmh">
+    <h3 id="cmh"></h3><p id="cmt" class="mute"></p>
+    <div class="row"><button class="btn ghost" id="cmNo" type="button">Cancel</button><button class="btn solid" id="cmYes" type="button">Confirm</button></div>
+  </div>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
